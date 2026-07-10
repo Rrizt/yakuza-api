@@ -1,0 +1,36 @@
+module.exports = {
+  TOKEN: process.env.TELEGRAM_TOKEN || "8212787787:AAGoBnJEeKcQuqgX_ahCEgbit5IEOHpu6wA",
+  OWNER_ID: process.env.OWNER_ID || 1398971818,
+
+  // Grup utama (bisa diisi ID grup yang tidak punya role khusus, misal untuk broadcast atau notifikasi)
+  ID_GROUP: [
+    -1003634695467
+  ],
+  ID_GROUP_UTAMA: [
+    -1003634695467
+  ],
+
+  // PEMETAAN ID GRUP → ROLE
+  // Ganti ID grup di bawah ini dengan ID grup Telegram Anda yang sebenarnya
+  ROLE_GROUP_MAP: {
+    '-1003704972547': 'reseller',
+    '-1003313353881': 'admin',
+    '-1003333333333': 'vip',
+    '-1003634695467': 'member',
+    '-1003705193659': 'owner',
+    '-1003859619616': 'high admin',
+    '-1003740120064': 'moderator',
+    '-1008888888888': 'founder'
+  },
+
+  // Semua grup yang diizinkan (otomatis tergabung dari ID_GROUP dan ROLE_GROUP_MAP)
+  get ALLOWED_GROUPS() {
+    const groupIds = [
+      ...(this.ID_GROUP || []),
+      ...(this.ID_GROUP_UTAMA || []),
+      ...Object.keys(this.ROLE_GROUP_MAP || {}).map(Number)
+    ];
+    // Hilangkan duplikat
+    return [...new Set(groupIds)];
+  }
+};

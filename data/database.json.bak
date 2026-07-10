@@ -1,0 +1,87 @@
+[
+  {
+    "username": "mizuki",
+    "password": "ya",
+    "role": "founder",
+    "expiredDate": "99999-99-9",
+    "parent": "system",
+    "lastSend": 1776846199837
+  },
+  {
+    "telegramId": "1398971818",
+    "username": "ARMUFA",
+    "password": "ARMUFA",
+    "role": "founder",
+    "limitedRole": false,
+    "createdBy": 1398971818,
+    "creatorRole": "founder",
+    "creatorName": "亗『ᴋɪɴɢ』ᴀʀᴍᴜꜰᴀ ×͜×",
+    "createdAt": "2026-05-11T15:16:36.651Z",
+    "expiredDate": "2029-02-03",
+    "lastSend": 1778599815264
+  },
+  {
+    "username": "Ilham",
+    "password": "123",
+    "role": "member",
+    "createdBy": 8635157082,
+    "creatorRole": "member",
+    "creatorName": "mynime",
+    "createdAt": "2026-05-11T15:19:50.860Z",
+    "expiredDate": "2026-06-10"
+  },
+  {
+    "username": "asaimut",
+    "password": "asaimutbgt",
+    "role": "member",
+    "createdBy": 6399591843,
+    "creatorRole": "member",
+    "creatorName": "⏤͟͟͞͞Xv7 || ɑׁׅ֮꯱ׁׅ֒ɑׁׅ֮ 09",
+    "createdAt": "2026-05-11T15:58:44.822Z",
+    "expiredDate": "2053-09-25",
+    "lastSend": 1778568813104
+  },
+  {
+    "username": "bilaa",
+    "password": "112",
+    "role": "member",
+    "createdBy": 8022929913,
+    "creatorRole": "member",
+    "creatorName": "Kmu gpp lazzz?",
+    "createdAt": "2026-05-12T02:27:42.518Z",
+    "expiredDate": "+026667-07-11",
+    "lastSend": 1778560280556
+  },
+  {
+    "username": "dimz",
+    "password": "765",
+    "role": "member",
+    "createdBy": 8778660163,
+    "creatorRole": "member",
+    "creatorName": "dimzzalowyz 9 8 1 8",
+    "createdAt": "2026-05-12T05:03:00.395Z",
+    "expiredDate": "2300-02-24"
+  },
+  {
+    "username": "zix",
+    "password": "123",
+    "role": "member",
+    "createdBy": 8399873838,
+    "creatorRole": "member",
+    "creatorName": "𝙃𝙖𝙯𝙞𝙭",
+    "createdAt": "2026-05-12T13:08:22.773Z",
+    "expiredDate": "2026-06-11",
+    "lastSend": 1778592014717
+  },
+  {
+    "username": "kilua",
+    "password": "kilua123",
+    "role": "member",
+    "createdBy": 5893996422,
+    "creatorRole": "member",
+    "creatorName": "kilua",
+    "createdAt": "2026-05-12T13:46:23.040Z",
+    "expiredDate": "2026-06-11",
+    "lastSend": 1778598467766
+  }
+]
