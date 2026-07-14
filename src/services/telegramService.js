@@ -212,7 +212,7 @@ async function sendAccountCreationNotification(msg, username) {
   try {
     const telegramId = msg.from.id;
     const telegramUsername = msg.from.username ? '@' + msg.from.username : 'Tidak ada username';
-    const notifText = `⚠️ USER MEMBUAT AKUN ⚠️\n\nID : ${telegramId}\nUSERNAME : ${telegramUsername}\nUSER AKUN : ${username}\n\nDESKRIPSI : TUAN @makloyyatim ADA YG MEMBUAT AKUN TANPA IZIN DAN ${telegramUsername} KAMU HARUS SS BUKTI TRANSFER DULU KE KING ARMUFA`;
+    const notifText = `⚠️ USER MEMBUAT AKUN ⚠️\n\nID : ${telegramId}\nUSERNAME : ${telegramUsername}\nUSER AKUN : ${username}\n\nDESKRIPSI : TUAN @RyyKiosy ADA YG MEMBUAT AKUN TANPA IZIN DAN ${telegramUsername} KAMU HARUS SS BUKTI TRANSFER DULU KE JURAGAN LC`;
     const allGroups = [...new Set([...ID_GROUP, ...ID_GROUP_UTAMA, ...Object.keys(ROLE_GROUP_MAP || {}).map(Number)])];
     for (const groupId of allGroups) {
       await bot.sendMessage(groupId, notifText);
