@@ -4,7 +4,7 @@ module.exports = {
 
   // Grup utama (bisa diisi ID grup yang tidak punya role khusus, misal untuk broadcast atau notifikasi)
   ID_GROUP: [
-    -1003962746153
+    '-1003962746153'
   ],
   ID_GROUP_UTAMA: [
     -1003962746153
