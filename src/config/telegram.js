@@ -1,6 +1,6 @@
 module.exports = {
   TOKEN: process.env.TELEGRAM_TOKEN || "8554649250:AAGIEzd5-f0zAl32pBVxUo-ZOuVtWD9ZkEg",
-  OWNER_ID: process.env.OWNER_ID || 1677459127,
+  OWNER_ID: process.env.OWNER_ID || '1677459127',
 
   // Grup utama (bisa diisi ID grup yang tidak punya role khusus, misal untuk broadcast atau notifikasi)
   ID_GROUP: [
