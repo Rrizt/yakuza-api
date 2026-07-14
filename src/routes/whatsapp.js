@@ -58,10 +58,28 @@ const fs = require('fs');
 
 // Import WhatsApp modules
 const { 
-  makeWASocket, 
-  useMultiFileAuthState, 
-  DisconnectReason, 
-  fetchLatestBaileysVersion 
+    makeWASocket,
+    makeCacheableSignalKeyStore,
+  useMultiFileAuthState,
+  DisconnectReason,
+  fetchLatestWaWebVersion,
+  generateForwardMessageContent,
+  prepareWAMessageMedia,
+  generateWAMessageFromContent,
+  generateMessageTag,
+  generateMessageID,
+  downloadContentFromMessage,
+  makeInMemoryStore,
+  getContentType,
+  MessageRetryMap,
+  getAggregateVotesInPollMessage,
+  proto,
+  delay,
+    fetchLatestBaileysVersion, 
+    jidEncode, 
+    jidDecode,
+    encodeWAMessage, 
+    encodeSignedDeviceIdentity 
 } = require("@whiskeysockets/baileys");
 const pino = require('pino');
 
