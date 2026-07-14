@@ -14,12 +14,12 @@ module.exports = {
   // Ganti ID grup di bawah ini dengan ID grup Telegram Anda yang sebenarnya
   ROLE_GROUP_MAP: {
     '-1002525390480': 'reseller',
-    '-1003313353881': 'admin',
-    '-1003301432354': 'vip',
+    '-100353881': 'admin',
+    '-10033014': 'vip',
     '-1003469607027': 'member',
     '-10034': 'owner',
-    '-1003587557671': 'high admin',
-    '-1003587557671': 'moderator',
+    '-10035875': 'high admin',
+    '-10057671': 'moderator',
     '-1003467259599': 'founder'
   },
 
